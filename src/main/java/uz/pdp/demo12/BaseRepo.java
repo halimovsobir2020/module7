@@ -28,6 +28,7 @@ public class BaseRepo<T> {
     }
 
     public List<T> findAll() {
+        System.out.println("hohohoho")
         try (
                 EntityManager entityManager = EMF.createEntityManager();
         ) {
