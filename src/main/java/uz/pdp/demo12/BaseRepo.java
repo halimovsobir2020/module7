@@ -16,6 +16,7 @@ public class BaseRepo<T> {
     }
 
     public void save(T entity) {
+        System.out.println("salom");
         try (
                 EntityManager entityManager = EMF.createEntityManager();
         ) {
